@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Daniel Cossu | Game Developer</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16009517-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-16009517-1');
+	</script>
+</head>
+
+<body>
+	<header class="main-nav-white">
+		<!--div class="blurred-bg">
+            <div style="background-image: url('/img/watch-dogs-legion.jpg');">
+            </div>
+        </div-->
+		<nav>
+			<h1 class="title">
+				<a href="/" class="accent"><img src="/img/mitch-andrews.png" alt="DANIEL COSSU" /></a>
+			</h1>
+			<div class="links">
+				<h2>
+					<a href="https://www.linkedin.com/in/dcossu" rel="external" target="_blank">LINKEDIN</a>
+				</h2>
+			</div>
+		</nav>
+	</header>
+	<div class="mega-game" id="mega-game">
+		<div style="bottom: 15px; position:absolute; width: 100%;" class="downArrow">
+			<div style="margin: 0 auto; color: white;display: table;
+            background: 000000FF;
+            padding: 10px; "><img src="/img/arrow.png" /></div>
+		</div>
+	</div>
+	<div class="content-title">
+		<h1><img src="/img/games.png" alt="Games" /></h1>
+	</div>
+	<div class="content game-list">
+		<a href="/game/mw3" class="game-link">
+			<div class="game-background" style="background-image: url('img/MWIII.jpg');">
+			</div>
+			<div class="game-info">
+				<p>The ultimate threat awaits.</p>
+			</div>
+			<div class="project-title">
+				<h1>Modern Warfare III</h1>
+			</div>
+		</a>
+		<a href="/game/mw2" class="game-link">
+			<div class="game-background" style="background-image: url('img/mw2.jpg');">
+			</div>
+			<div class="game-info">
+				<p></p>
+			</div>
+			<div class="project-title">
+				<h1>Modern Warfare II</h1>
+			</div>
+		</a>
+		<a href="/game/watch-dogs-legion" class="game-link">
+			<div class="game-background" style="background-image: url('img/watch-dogs-legion-thumb.png');">
+			</div>
+			<div class="game-info">
+				<p>WELCOME TO THE RESISTANCE<br /> Anyone can be your weapon.</p>
+			</div>
+			<div class="project-title">
+				<h1>📸 Watch Dogs: Legion</h1>
+			</div>
+		</a>
+		<a href="/game/dmk" class="game-link">
+			<div class="game-background" style="background-image: url('img/dmk.jpg');">
+			</div>
+			<div class="game-info">
+				<p>Relive the thrill of Disney Parks and create the most fantastical Park of your dreams in Disney Magic Kingdoms!</p>
+			</div>
+			<div class="project-title">
+				<h1>🕹️ Disney Magic Kingdoms</h1>
+			</div>
+		</a>
+	</div>
+	<footer>
+		&copy;2024 Daniel Cossu
+	</footer>
+	<script>
+		window.onload = function() {
+			var element = document.getElementById('mega-game');
+			if (element) {
+				if (Math.random() >= 0.5) {
+					element.style.backgroundImage = 'url("/img/mw3-cover.png")';
+				} else {
+					element.style.backgroundImage = 'url("/img/mw3-cover-2.png")';
+				}
+			}
+		};
+	</script>
+</body>
+
+</html>
